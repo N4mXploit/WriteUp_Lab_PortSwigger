@@ -5,7 +5,7 @@
 https://0adc00c1049a670880b8621d0024005d.web-security-academy.net/filter?category=Corporate+gifts
 ```
 Ta thấy có phần `category=Corporate+gifts` rất đáng nghi đây là một lỗi về SQLi,ta thử 
-`OR 1=1--` vào url:
+`' OR 1=1--` vào url:
 ```LINK
 https://0adc00c1049a670880b8621d0024005d.web-security-academy.net/filter?category=Corporate+gifts'+OR+1=1--
 ```
