@@ -40,4 +40,4 @@ Ta dùng `||'\'||` là dùng để nối username và password để đưa 2 cá
 ![Nối username và password vào cùng một cột](images/Pasted%20image%2020260601214913.png)
 => ta thấy tài khoản `administrator` và mật khẩu được ngăn bởi dấu `\` vậy ta chỉ cần đăng nhập là xong
 ![Đăng nhập administrator thành công](images/Pasted%20image%2020260601215026.png)
-=>solved!
+=>solved
