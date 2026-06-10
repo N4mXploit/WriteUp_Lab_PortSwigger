@@ -1,4 +1,4 @@
-![[Pasted image 20260610095959.png]]
+![Tổng quan ban đầu](images/Pasted%20image%2020260610095959.png)
 # Tổng quan về lab
 -Theo như description của lab thì lab dùng tracking cookie để query SQL và câu query SQL sẽ không được trả về,và không phản hồi `Welcome back` như lần trước nữa mà thay vào đó là trả về lỗi
 -Ta có thông tin là có một bảng có tên `users` với 2 cột là `username` và `password`.Mục tiêu của chúng ta là khai thác việc query database có đúng hay sai của database rồi khai thác,lab sử dụng Oracle database.
@@ -59,11 +59,11 @@ extract_data()
 
 ```
 
-![[Pasted image 20260610103612.png]]
+![Script Python khai thác password bằng error-based blind SQLi](images/Pasted%20image%2020260610103612.png)
 
 Cuối cùng ta được mật khẩu của `administrator` là `1jpaa9oi856fsklnh32h`
 
 Việc còn lại của ta là đăng nhập:
-![[Pasted image 20260610103757.png]]
+![Đăng nhập administrator thành công](images/Pasted%20image%2020260610103757.png)
 
 => solved!
