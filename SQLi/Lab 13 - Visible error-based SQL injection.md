@@ -2,7 +2,7 @@
 # Tổng quan
 -Lab sử dụng tracking cookie để truy vấn query SQL,Kết quả của câu lệnh SQL sẽ không được trả về
 
--Database có table là `users` với các bảng là `username` và `password` .Mục tiêu là tìm cách để leak ra `password` của `administrator`
+-Database có table là `users` với các column là `username` và `password` .Mục tiêu là tìm cách để leak ra `password` của `administrator`
 # Khai thác
 **Cách 1:**
 -Trước hết ta biết được SQLi ở tracking cookie là `TrackingId` ta dùng `Burp Repeater` thử thêm `'` để xem response:
