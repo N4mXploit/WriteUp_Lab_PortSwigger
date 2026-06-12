@@ -1,6 +1,7 @@
 ![Giao diện lab ban đầu](images/Pasted%20image%2020260612100058.png)
 # Tổng quan
 -Lab sử dụng tracking cookie để truy vấn query SQL,Kết quả của câu lệnh SQL sẽ không được trả về
+
 -Database có table là `users` với các bảng là `username` và `password` .Mục tiêu là tìm cách để leak ra `password` của `administrator`
 # Khai thác
 **Cách 1:**
