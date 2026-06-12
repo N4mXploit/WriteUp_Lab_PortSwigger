@@ -4,12 +4,7 @@
 > “Không chỉ là solve lab — đây là hành trình hiểu cách hacker tư duy.”  
 
 Repository này được tạo ra để lưu lại quá trình học và thực hành các lab trên PortSwigger Web Security Academy.  
-Mỗi write-up không chỉ ghi lại cách solve, mà còn tập trung giải thích:
-- Vì sao lỗ hổng tồn tại
-- Cách payload hoạt động
-- Tư duy khi khai thác
-- Những lỗi thường gặp
-- Cách phòng tránh trong thực tế
+
 
 ---
 
