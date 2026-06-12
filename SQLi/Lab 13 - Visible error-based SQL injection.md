@@ -60,6 +60,7 @@ Và done,ta đã tìm được password của administrator là `90rjlf3vfcc0u3j
 Việc còn lại của ta là đăng nhập với tài khoản `administrator` là xong.
 ![Đăng nhập administrator thành công](images/Pasted%20image%2020260612103408.png)
 => solved!
+
 **Cách 2:**
 Dựa cách phân tích như cách 1,thay vì dùng Burp ta dùng script Python:
 ```Python
