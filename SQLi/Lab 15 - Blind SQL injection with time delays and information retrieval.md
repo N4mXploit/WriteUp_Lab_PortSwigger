@@ -1,8 +1,11 @@
 ![Giao diện lab ban đầu](images/Pasted%20image%2020260618125658.png)
 # Tổng quan
 -Lab có lỗ hổng blind SQLi.App sử dụng tracking cookie để query SQL
+
 -Kết quả của truy vấn SQL không được trả về, và app không phản hồi gì
+
 -Database có chứa một table là `users` với các bảng `username` và `password`
+
 =>Ta cần khai thác Blind SQLi để tìm password của tài khoản `administrator`
 # Khai thác
 -Vì theo như mô tả thì lab có Tracking cookie để query SQL nên ta có thể suy ra được là lỗ hổng blind SQLi nằm ở parameter TrackingId
