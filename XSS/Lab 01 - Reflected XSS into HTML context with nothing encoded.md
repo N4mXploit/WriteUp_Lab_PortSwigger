@@ -7,13 +7,21 @@ Lab chứa lỗ hổng Reflected XSS ở chức năng tìm kiếm
 Mục tiêu của ta là sử dụng tấn công XSS để gọi hàm alert()
 
 # Khai thác
-Ta biết được XSS là lỗ hổng cho phép người dùng viết mã Javascript bằng cách chèn thêm thẻ script:
+Ta biết được XSS là lỗ hổng cho phép kẻ tấn công chèn và thực thi mã JavaScript trên trình duyệt của người dùng
+
+Trong trường hợp đơn giản nhất, ta có thể thực thi JavaScript bằng cách chèn thẻ <script> vào trang web:
 
 ```Javascript
 <script>
 //code JS
 </script>
 ```
+Trước tiên, ta cần kiểm tra xem dữ liệu đầu vào có được render dưới dạng HTML hay không.
+
+Một cách đơn giản là chèn thẻ <br> vào chuỗi tìm kiếm và quan sát kết quả trả về. 
+
+Nếu trình duyệt thực sự render thẻ này, điều đó cho thấy ứng dụng đang đưa dữ liệu người dùng vào HTML mà không encode đúng cách.
+
 Quay lại với bài lab,ta thử tìm kiếm với chuỗi `Hello World!` với thẻ `<br>` có gì khác nhau
 
 Với chuỗi `Hello World!`:
