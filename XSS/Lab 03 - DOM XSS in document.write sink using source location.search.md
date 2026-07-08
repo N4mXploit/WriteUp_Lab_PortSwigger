@@ -23,7 +23,7 @@ Phân tích code:
  
  -Sau đó truyền query vào hàm trackSearch
  
- -Hàm trackSearch sử dụng document.write để tìm kiếm dùng ảnh tracking
+ -Hàm trackSearch() sử dụng document.write() để chèn một ảnh tracking vào trang nhằm ghi nhận từ khóa người dùng tìm kiếm.
 
 Ta có thể thấy phần:
 
