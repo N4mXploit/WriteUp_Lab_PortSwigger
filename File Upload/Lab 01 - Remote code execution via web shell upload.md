@@ -23,7 +23,7 @@ Click Upload
 
 <img width="1692" height="892" alt="image" src="https://github.com/user-attachments/assets/6fe004d7-5e8b-459f-ba54-0cbeaa7ff5d3" />
 
-Vậy là Web không có cơ chế white list để chống upload file khác nên ta upload file .txt
+Vậy là Web không có white list để chống upload file khác nên ta upload file .txt
 
 => File Upload Vuln
 
