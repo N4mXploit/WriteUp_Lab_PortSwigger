@@ -1,4 +1,4 @@
-<img width="1690" height="894" alt="image" src="https://github.com/user-attachments/assets/30185010-5a62-416c-8240-0749ecd2e1f4" /><img width="997" height="608" alt="image" src="https://github.com/user-attachments/assets/357ca7a3-b1fc-49bb-a753-3cd7b2f87f86" />
+<img width="997" height="608" alt="image" src="https://github.com/user-attachments/assets/357ca7a3-b1fc-49bb-a753-3cd7b2f87f86" />
 
 # Tổng quan
 Đầu tiên sử dụng trang web như một người dùng bình thường với tài khoản `wiener` và mật khẩu  `peter`
