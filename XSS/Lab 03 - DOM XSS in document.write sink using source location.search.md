@@ -30,7 +30,7 @@ Ta có thể thấy phần:
 ```JavaScript
  document.write('<img src="/resources/images/tracker.gif?searchTerms='+query+'">');
 ```
-document.write có sử dụng để chèn thêm thẻ `<img src="/resources/images/tracker.gif?searchTerms='+query+'">` và phần `+query+` được ghép trực tiếp vào HTML => XSS
+document.write có sử dụng để chèn thêm thẻ `<img src="/resources/images/tracker.gif?searchTerms='+query+'">` và phần `+query+` được ghép trực tiếp vào HTML,không được encode hay sanitize trước khi render => XSS
 
 # Khai thác
 
