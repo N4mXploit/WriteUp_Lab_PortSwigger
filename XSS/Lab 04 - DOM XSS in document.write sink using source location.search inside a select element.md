@@ -89,8 +89,8 @@ Ta sử dụng payload:
 ```
 &storeId=1"><select><svg%20onload=alert(1)>
 ```
-`&storeId=1">` với mục đích là để đóng cái check stock đó đi
-`<select>` là để mở thẻ Select vì phía sau đoạn code có write thêm thẻ đóng Select 
+`&storeId=1">` với mục đích là để break out khỏi <option> tag
+`<select>` là JS có document.write('</select>') — nếu không có <select> giả này, cái </select> đó sẽ đóng thẻ <form> cha hoặc gây lỗi parse DOM, có thể làm payload không execute. <select> giả đứng ra "nhận" cái </select> đó thay.
 `<svg%20onload=alert(1)>` mục đích là tạo file ảnh vecto thêm attribute onload=alert(1) với mục đích khi thẻ svg được load thì sẽ thực thi lệnh alert(1) đúng với mục tiêu của lab
 
 Ta enter vào url và đợi kết quả:
