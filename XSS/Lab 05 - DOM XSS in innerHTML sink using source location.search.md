@@ -54,7 +54,7 @@ Nếu ta thử payload `<img src=1 onerror="alert(1)">` thì sao:
 
 Vậy là ta thành công gọi hàm alert(1)
 
-Giải thích : + Trong thẻ img ta có attribute src=1 với mục đích browser sẽ request tới : `https://example.com/1` mà vì src=1 được browser xử lý như một URL tương đối. Khi resource đó không tải thành công, <img> phát sinh error event, từ đó event handler onerror được thực thi.</br>
+Giải thích : </br> + Trong thẻ img ta có attribute src=1 với mục đích browser sẽ request tới : `https://example.com/1` mà vì src=1 được browser xử lý như một URL tương đối. Khi resource đó không tải thành công, <img> phát sinh error event, từ đó event handler onerror được thực thi.</br>
              + Mà thẻ img bị lỗi là mục đích để ta gọi function alert(1) với attribute là onerror
 
 <img width="1699" height="896" alt="image" src="https://github.com/user-attachments/assets/94d27c73-ccb0-43a4-b4f8-5ab3ecdaabde" />
