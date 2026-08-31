@@ -44,7 +44,9 @@ Ta thử với payload `<script>alert(1)</script>`:
 
 <img width="1706" height="972" alt="image" src="https://github.com/user-attachments/assets/0642bf05-199d-4ba1-9222-7d77bbfc5f60" />
 
-Có vẻ như phía backend đã chặn payload này
+Sau khi tìm hiểu trên các tài liệu về DOM Js,Thẻ <script>alert(1)</script> không thực thi khi chèn qua innerHTML vì tiêu chuẩn HTML5 đã nghiêm cấm trình duyệt chạy các thẻ <script> được tạo ra từ thuộc tính innerHTML
+
+<img width="1706" height="977" alt="image" src="https://github.com/user-attachments/assets/27896f6d-d216-477c-aae1-23dff3b0fcfe" />
 
 Nếu ta thử payload `<img src=1 onerror="alert(1)">` thì sao:
 
@@ -52,7 +54,7 @@ Nếu ta thử payload `<img src=1 onerror="alert(1)">` thì sao:
 
 Vậy là ta thành công gọi hàm alert(1)
 
-Giải thích : + Trong thẻ img ta có attribute src=1 với mục đích browser sẽ request tới : `https://example.com/1` mà vì nó không tồn tại => thẻ img bị lỗi
+Giải thích : + Trong thẻ img ta có attribute src=1 với mục đích browser sẽ request tới : `https://example.com/1` mà vì src=1 được browser xử lý như một URL tương đối. Khi resource đó không tải thành công, <img> phát sinh error event, từ đó event handler onerror được thực thi.
              
              + Mà thẻ img bị lỗi là mục đích để ta gọi function alert(1) với attribute là onerror
 
