@@ -32,7 +32,7 @@ Ta sử dụng trang web như một user bình thường sử dụng các chức
  
  <img width="1670" height="891" alt="image" src="https://github.com/user-attachments/assets/679c42f9-e538-4dce-94ec-f4fc94e86a50" />
 
-Ta có thể thấy là chữ `World!` được `innerHTML` parse nên xuống dòng 
+Kết quả cho thấy <br> đã được browser parse thành HTML element thay vì được hiển thị như chuỗi text. Điều này xác nhận input của search đang được đưa vào HTML parsing context.
 
 => rất có thể đây là DOM XSS
 
@@ -44,7 +44,7 @@ Ta thử với payload `<script>alert(1)</script>`:
 
 <img width="1706" height="972" alt="image" src="https://github.com/user-attachments/assets/0642bf05-199d-4ba1-9222-7d77bbfc5f60" />
 
-Sau khi tìm hiểu trên các tài liệu về DOM Js,Thẻ <script>alert(1)</script> không thực thi khi chèn qua innerHTML vì tiêu chuẩn HTML5 đã nghiêm cấm trình duyệt chạy các thẻ <script> được tạo ra từ thuộc tính innerHTML
+Sau khi tìm hiểu trên các tài liệu về DOM Js,Thẻ <script>alert(1)</script> không thực thi khi chèn qua innerHTML vì khi <script> được tạo thông qua việc gán innerHTML, script element này không được thực thi. Đây là hành vi được quy định bởi cơ chế xử lý của HTML DOM và HTML parser.
 
 <img width="1706" height="977" alt="image" src="https://github.com/user-attachments/assets/27896f6d-d216-477c-aae1-23dff3b0fcfe" />
 
