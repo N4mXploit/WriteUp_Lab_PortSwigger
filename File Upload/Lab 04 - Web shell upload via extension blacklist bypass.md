@@ -49,7 +49,7 @@ AddType application/x-httpd-php .jpg
 
 Mục đích là để cho file `.jpg` có thể được Apache chuyển cho PHP handler thay vì coi nó đơn thuần là ảnh 
 
-Ta có thể bypass bằng cách thêm đuôi extension `.jpg` file `exploit.php` lúc này nó sẽ thành `exploit.php.jpg` nên web sẽ thành file hợp lệ:
+Ta có thể bypass bằng cách Đổi tên payload từ exploit.php thành exploit.php.jpg. Blacklist chỉ nhìn extension cuối cùng là .jpg, trong khi .htaccess đã cấu hình Apache xử lý .jpg bằng PHP handler:
 
 <img width="1688" height="892" alt="image" src="https://github.com/user-attachments/assets/04698348-4a93-4a2b-95af-8fa0ae506ef3" />
 
