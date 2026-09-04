@@ -1,4 +1,4 @@
-<img width="1706" height="966" alt="image" src="https://github.com/user-attachments/assets/3c1f48d1-940a-4b5d-95de-b76cda7ec0c6" /><img width="1003" height="611" alt="image" src="https://github.com/user-attachments/assets/6377962b-2072-48a2-864a-c414b9f8e472" />
+<img width="1003" height="611" alt="image" src="https://github.com/user-attachments/assets/6377962b-2072-48a2-864a-c414b9f8e472" />
 
 # Tổng Quan
 
