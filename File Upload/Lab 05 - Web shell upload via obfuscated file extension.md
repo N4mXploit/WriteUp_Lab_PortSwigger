@@ -67,7 +67,7 @@ Ta sẽ thử với file `exploit.php%00.png` :
 Ta đã upload thành công và có chi tiết rất hay đó là tên file có đuôi là `png` tuy nhiên logic xử lí của web khiến cho file bị mất đi đuôi .png và vô tình upload file .php
 
 Lý do cho việc này:</br> 
-+ Đầu tiên file `exploit.php.png` có đuôi là `.png` nằm trong whitelist nên pass qua vòng duyệt file </br>
++ Đầu tiên file `exploit.php%00.png` có đuôi là `.png` nằm trong whitelist nên pass qua vòng duyệt file </br>
 + Tuy nhiên `%00` null byte sẽ web URL decoding là \0 và sử dụng C-style string và coi \0 là kết thúc chuỗi nên thành ra file `exploit.php` uploaded </br>
 
 Rồi cuối cùng ta truy cập vào file exploit.php:</br>
